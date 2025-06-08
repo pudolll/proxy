@@ -11,4 +11,4 @@ def test(site, type, subpath):
         case "redirect": return redirect(url)
         case "json": return requests.get(url).json()
 
-app.run()
+app.run(host='0.0.0.0', port=8080)
